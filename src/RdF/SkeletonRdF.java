@@ -12,6 +12,8 @@ import javax.mail.MessagingException;
 import javax.mail.SendFailedException;
 import Mail.Mail_Helper;
 
+// TODO: cambiare if-else con switch (eventualmente, se si usa RMI questa classe non serve più e neanche proxy)
+
 public class SkeletonRdF implements Runnable {
     private Socket socket;
     private ObjectInputStream is;

@@ -20,7 +20,7 @@ public class DatabaseConnector {
     public static void main(String[] args) {
         new DatabaseConnector("localhost", "odococo", "Lampert1").connect();
     }
-
+// TODO: cambiare credenziali
     //**********************************************
     public String getUrl() {
         return url;
