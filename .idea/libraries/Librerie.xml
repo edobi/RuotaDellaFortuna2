@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Librerie">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.idea/libraries/activation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.idea/libraries/javax.activation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.idea/libraries/javax.mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.idea/libraries/postgresql.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

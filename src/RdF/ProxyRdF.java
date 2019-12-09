@@ -1,6 +1,7 @@
 package RdF;
 
 import GUI.Profile;
+import GUI.Profilo;
 import GUI.Stats;
 
 import java.io.*;
@@ -707,7 +708,7 @@ public class ProxyRdF {
         return str;
     }
 
-    public void Prof(Profile profile)
+    public void Prof(Profilo profile)
     {
         profile.setEmail(email);
         try {
