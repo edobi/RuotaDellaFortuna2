@@ -1,8 +1,7 @@
 package RdF;
 
-import GUI.Profile;
 import GUI.Profilo;
-import GUI.Stats;
+import GUI.Statistics;
 
 import java.io.*;
 import java.net.InetAddress;
@@ -310,7 +309,7 @@ public class ProxyRdF {
         return res;
     }
 
-    public void Stats(Stats window, String name) {
+    public void Stats(Statistics window, String name) {
         System.out.println("stats");
         if (name.isEmpty())
             name = this.name;//login nickname 
