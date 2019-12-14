@@ -18,7 +18,6 @@ public class Add_Sentence {
 
     public Add_Sentence(ProxyRdF prox) {
 
-
         aggiungiButton.addActionListener(new ActionListener() {
             /*-------------------*/
             public void actionPerformed(ActionEvent e) {

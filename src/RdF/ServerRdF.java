@@ -5,7 +5,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.HashMap;
 
-import GUI.InsertDb;
+import GUI.AddDatabase;
 import Mail.Mail_Helper;
 
 public class ServerRdF {
@@ -18,7 +18,7 @@ public class ServerRdF {
         boolean bool = true;
         //ConnectProp games;
         //Server sergui;
-        java.awt.EventQueue.invokeLater(() -> new InsertDb(new ServerRdF()));
+        java.awt.EventQueue.invokeLater(() -> new AddDatabase(new ServerRdF()));
     }
 
     public void setDbcon(DatabaseConnector dbcon) {
