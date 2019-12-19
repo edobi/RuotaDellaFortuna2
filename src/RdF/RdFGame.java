@@ -282,21 +282,7 @@ public class RdFGame implements Runnable
 						lettlist.replace(c,true);
 						this.com=Comands.VOWEL;
 						String temp=c+"";
-						//visual(temp,"",com.getCode());
 					}
-					/*try {
-						ch=c;
-						lettlist.replace(c,true);
-						String temp=c+"";
-						visual(temp,"",com.getCode());
-						//poc.players[i].oos.writeBoolean(true);
-						//poc.players[i].oos.writeObject(frasemap.get(c));
-					} catch (IOException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					};
-
-					 */
 				}
 				else
 				{
@@ -354,28 +340,6 @@ public class RdFGame implements Runnable
 
 	private static boolean  isVowel(char c)
 	{
-		/*
-		 *
-		 * if(pla.ppool>1000)
-		 * {
-		 * 		pla.ppool-=1000;
-		 * 		switch(charing.touppercase())
-		 * 		{
-		 * 			case A:
-		 * 			break;
-		 * 			case E:
-		 * 			break;
-		 * 			case I:
-		 * 			break;
-		 * 			case O:
-		 * 			break;
-		 * 			case U:
-		 * 			break;
-		 * 			default:
-		 * 		}
-		 * }
-		 *
-		*/
 			boolean b=false;
 			c=Character.toUpperCase(c);
 				if(c=='A' || c=='E'|| c=='I'|| c=='O'|| c=='U') {
@@ -395,7 +359,6 @@ public class RdFGame implements Runnable
 				if(temp)
 				{
 					poc.players[i].jolly--;
-					//poc.players[i].oos.writeObject(Comands.YT);
 				}
 				else
 				{
@@ -424,26 +387,11 @@ public class RdFGame implements Runnable
 		if(i==2)
 		{
 			j=0;
-			/*try {
-				poc.players[i].oos.writeObject(Comands.YT);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			 */
 		}
 		else
 		{
 			j++;
-			/*
-			try {
-				poc.players[i].oos.writeObject(Comands.YT);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 
-			 */
 		}
 
 
@@ -492,18 +440,6 @@ public class RdFGame implements Runnable
 				poc.players[npl].points+=temp.size()*Integer.parseInt(prem);
 				ppos.replace(poc.players[npl].name,poc.players[npl].points);
 				String tems=c+"";
-				//visual(tems,"",com);
-				/*try {
-					String tems=c+"";
-					visual(tems,"",com);
-					//poc.players[npl].oos.writeBoolean(true);
-					//poc.players[npl].oos.writeObject(temp);
-					//poc.players[npl].oos.writeObject(new GuiUpd(c,temp,poc.players[0].points,poc.players[1].points,poc.players[2].points));
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				 */
 				consn--;
 				lettlist.replace(c,true);
 				if(consn==0)

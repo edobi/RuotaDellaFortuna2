@@ -65,20 +65,5 @@ public class Sentence implements Serializable {
 			sent=sent.toUpperCase();
 			theme=theme.toUpperCase();
 		}
-		//***********************************************
-		/*public static void main(String []args) {
-			String stringa="ciao";
-			System.out.println(stringa.length());
-			System.out.println(stringa.isEmpty());
-			Sentence s=new Sentence();
-			ArrayList<Letter> al=new ArrayList<Letter>();
-			al=s.getArray();
-			System.out.println(al.remove(0).getLetter());
-			System.out.println(al.remove(0).getLetter());
-			System.out.println(al.remove(0).getLetter());
-			System.out.println(al.remove(0).getLetter());
-		}*/
-		
-		
-		
-	}//fine class
+
+	}

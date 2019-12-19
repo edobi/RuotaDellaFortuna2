@@ -106,7 +106,7 @@ public class ProxyRdF {
 			out = new ObjectOutputStream(socket.getOutputStream());
 			in = new ObjectInputStream(socket.getInputStream());
 		} catch (Exception e) {
-			System.out.println("Ellole nel ploxy!");
+			System.out.println("Errore nel proxy!");
 			e.printStackTrace();
 		}
 	}

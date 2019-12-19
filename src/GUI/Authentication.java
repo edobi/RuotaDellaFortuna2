@@ -43,7 +43,6 @@ public class Authentication extends JFrame implements Runnable {
         EventQueue.invokeLater(() -> {
             try {
                 debug();
-                //Login window = new Login();
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -79,14 +78,13 @@ public class Authentication extends JFrame implements Runnable {
                         if (b == 2) new Activation_Code(server);
                         else {
                             if (b == 1) server.setPoA(true);
-                            frmAuthentication.setVisible(false);
                             new Home(server);
 
                         }
                     } else {
                         JOptionPane.showMessageDialog(null, "Inserimento dati errato");
                     }
-                }//fine action perfermed
+                }
         );
         Esci.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
