@@ -18,11 +18,13 @@ public class SignUpAdmin {
     boolean adm = true;
 
     public SignUpAdmin(ProxyRdF prox) {
+        JButton INDIETROButton = new JButton("INDIETRO");
         INDIETROButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
             }
         });
 
+        JButton REGISTRATIButton = new JButton("REGISTRATI");
         REGISTRATIButton.addActionListener(new ActionListener() {
 
             public void actionPerformed(ActionEvent e) {

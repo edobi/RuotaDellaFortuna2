@@ -56,6 +56,7 @@ public class List_Match {
             });
         } catch(Exception e) {e.printStackTrace();}
 
+        indietroButton = new JButton("INDIETRO");
         indietroButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
             }

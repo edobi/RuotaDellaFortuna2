@@ -26,11 +26,13 @@ public class Sign_Up_Player {
     public Sign_Up_Player(ProxyRdF prox) {
 
 
+        JButton INDIETROButton = new JButton("INDIETRO");
         INDIETROButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
             }
         });
 
+        JButton REGISTRATIButton = new JButton("REGISTRATI");
         REGISTRATIButton.addActionListener(e -> {
                     txtName = textFieldname.getText();
                     txtSurname = textFieldcognome.getText();

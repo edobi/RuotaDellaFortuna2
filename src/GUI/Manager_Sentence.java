@@ -22,6 +22,7 @@ public class Manager_Sentence {
         for (int index = 0; index < 100; index++) {
             labels.add("Frase " + index);
         }
+        MODIFICAFRASEButton  = new JButton("MODIFICA FRASE");
         MODIFICAFRASEButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 str = "Modifica";
@@ -29,17 +30,20 @@ public class Manager_Sentence {
             }
         });
 
+        ELIMINAFRASEButton = new JButton("ELIMINA FRASE");
         ELIMINAFRASEButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 str = "Elimina";
                 Select_Sentence ss = new Select_Sentence(str, prox);
             }
         });
+        INSERISCIFRASEButton= new JButton("INSERISCI FRASE");
         INSERISCIFRASEButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Add_Sentence aS = new Add_Sentence(prox);
             }
         });
+        IMPORTADAFILECSVButton= new JButton("IMPORTA DA FILE CSV ");
         IMPORTADAFILECSVButton.addActionListener(new ActionListener() {
             int i;
             public void actionPerformed(ActionEvent e) {

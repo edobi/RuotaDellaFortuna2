@@ -10,6 +10,7 @@ public class Activation_Code {
     private JButton CONFERMAButton;
 
     public Activation_Code(ProxyRdF prox) {
+        JButton CONFERMAButton = new JButton("CONFERMA");
         CONFERMAButton.addActionListener(e -> prox.ActivCode(textCODE.getText()));
 
     }

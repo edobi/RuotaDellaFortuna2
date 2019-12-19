@@ -18,6 +18,7 @@ public class Add_Sentence {
 
     public Add_Sentence(ProxyRdF prox) {
 
+        JButton aggiungiButton = new JButton("AGGIUNGI");
         aggiungiButton.addActionListener(new ActionListener() {
             /*-------------------*/
             public void actionPerformed(ActionEvent e) {
@@ -56,6 +57,7 @@ public class Add_Sentence {
                 }
             }
         });
+        JButton indietroButton = new JButton("INDIETRO");
         indietroButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
             }

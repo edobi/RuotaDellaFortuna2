@@ -14,13 +14,16 @@ public class ChangePassword {
     private JButton indietroButton;
     private JButton confermaButton;
 
+
     public ChangePassword(ProxyRdF prox) {
 
+        JButton indietroButton = new JButton("INDIETRO");
         indietroButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
             }
         });
 
+        JButton confermaButton = new JButton("CONFERMA");
         confermaButton.addActionListener(new ActionListener() {
         public void actionPerformed (ActionEvent e){
             if ((textnuovapass.getText().length() > 1) && textnuovapass.getText().equals(textconfermapass.getText())) {

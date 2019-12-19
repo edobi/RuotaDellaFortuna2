@@ -71,6 +71,7 @@ public class Obs {
             gtemp.gridy = y+i;
             ppos[i]=Temp;
         }
+        JList list1 = new JList();
 
     }
 }

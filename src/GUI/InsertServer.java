@@ -10,6 +10,7 @@ import java.awt.event.ActionListener;
 
 public class InsertServer {
     private JTextField textField1;
+    private JFrame frmRdf;
     private JPasswordField passwordField1;
     private JButton ACCEDIButton;
     private JButton ESCIButton;
@@ -17,6 +18,8 @@ public class InsertServer {
     private String msgMailErr = "";
 
     public InsertServer(ServerRdF server) {
+
+        JButton ACCEDIButton = new JButton("ACCEDI");
         ACCEDIButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String mail = textField1.getText();
@@ -51,5 +54,8 @@ public class InsertServer {
                 }
             }
         });
+        ESCIButton = new JButton("ESCI");
+        System.out.println(frmRdf);
+        frmRdf.show();
     }
 }

@@ -69,6 +69,7 @@ public class Second_Match {
             ppos[i]=temp;
         }
 
+        JButton GIRALARUOTAButton = new JButton("GIRA LA RUOTA");
         GIRALARUOTAButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 //metodo gira la ruota
@@ -99,6 +100,8 @@ public class Second_Match {
             }
         });
 
+
+        JButton COMPRAVOCALEButton = new JButton("COMPRA VOCALE");
         COMPRAVOCALEButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 com=prox.getCombyCode(prox.getLccom());
@@ -111,6 +114,7 @@ public class Second_Match {
             }
         });
 
+        JButton DALASOLUZIONEButton = new JButton("DA LA SOLUZIONE");
         DALASOLUZIONEButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 //metodo soluzione
@@ -129,6 +133,7 @@ public class Second_Match {
             }
         });
 
+        JButton CONFERMAButton = new JButton("CONFERMA");
         CONFERMAButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 
@@ -144,6 +149,7 @@ public class Second_Match {
             }
         });
 
+        JButton ABBANDONAButton = new JButton("ABBANDONA");
         ABBANDONAButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 prox.setLccom(Comands.DISCONNECT.getCode());

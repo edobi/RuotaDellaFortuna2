@@ -16,6 +16,7 @@ public class ImportSentence {
 
     public ImportSentence(ProxyRdF prox) {
 
+        JButton CONFERMAButton = new JButton("CONFERMA");
         CONFERMAButton.addActionListener(new ActionListener() {
             private int i;
 

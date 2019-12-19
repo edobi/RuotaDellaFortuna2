@@ -1,8 +1,10 @@
 package GUI;
 
 import RdF.ProxyRdF;
-import com.sun.org.glassfish.external.statistics.Stats;
+/* import com.sun.org.glassfish.external.statistics.Stats;
 import sun.java2d.cmm.Profile;
+
+ */
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -22,22 +24,27 @@ public class Home {
 
     public Home(ProxyRdF prox) {
 
-
-   gestioneFrasiButton.addActionListener(new ActionListener() {
+        JButton gestioneFrasiButton = new JButton("Gestione Frasi");
+        gestioneFrasiButton.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent e) {
             Manager_Sentence ms = new Manager_Sentence(prox);
         }
     });
+        JButton statisticheButton = new JButton("Statistiche");
     statisticheButton.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent e) {
             Statistics s = new Statistics(prox);
         }
     });
+
+
+        JButton profiloButton = new JButton("Profilo");
     profiloButton.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent e) {
             Profilo profile = new Profilo(prox);
         }
     });
+        JButton guardaPartitaButton = new JButton("Guarda Partita");
     guardaPartitaButton.addMouseListener(new MouseAdapter() {
         @Override
         public void mouseClicked (MouseEvent e){
@@ -53,11 +60,14 @@ public class Home {
         }
     });
 
+        JButton nuovaPartitaButton = new JButton("Nuova Partita");
         nuovaPartitaButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 MatchName mn = new MatchName(prox);
             }
         });
+
+        JButton cercaPartitaButton = new JButton("Cerca Partita");
                 cercaPartitaButton.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
                         try {
@@ -72,6 +82,7 @@ public class Home {
                     }
                 });
 
+        JButton registraAmministratoreButton = new JButton("Registra Amministratore");
                 registraAmministratoreButton.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent e) {
             //SignUpAdmin sua = new SignUpAdmin(prox);

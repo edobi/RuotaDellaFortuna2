@@ -20,6 +20,7 @@ public class DatabaseConnector {
     public static void main(String[] args) {
         new DatabaseConnector("localhost:5432/postgres", "postgres", "1234").connect();
     }
+
 // TODO: cambiare credenziali
     //**********************************************
     public String getUrl() {

@@ -12,11 +12,12 @@ public class Reset_Password {
     private JButton CONFERMAButton;
 
     public Reset_Password(ProxyRdF prox) {
+        JButton INDIETROButton = new JButton("INDIETRO");
         INDIETROButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
             }
         });
-
+        JButton CONFERMAButton = new JButton("CONFERMA");
     CONFERMAButton.addActionListener(new ActionListener() {
         /*-------------------*/
         public void actionPerformed(ActionEvent e) {

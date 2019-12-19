@@ -68,6 +68,7 @@ public class Authentication extends JFrame implements Runnable {
             // TODO Auto-generated catch block
         }
 
+        JButton Accedi = new JButton("ACCEDI");
         Accedi.addActionListener(e -> {
                     String email = textEmail.getText();//ottengo email
                     String psw = new String(passwordField1.getPassword());//ottengo password
@@ -86,10 +87,12 @@ public class Authentication extends JFrame implements Runnable {
                     }
                 }
         );
+        JButton ESCI = new JButton("ESCI");
         Esci.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
             }
         });
+        JButton ForgotPassword = new JButton("Password dimenticata?");
         ForgotPassword.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -97,6 +100,7 @@ public class Authentication extends JFrame implements Runnable {
             }
         });
 
+        JButton nonHaiUnAccountButton = new JButton("Non hai un account? Registrati");
         nonHaiUnAccountButton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {

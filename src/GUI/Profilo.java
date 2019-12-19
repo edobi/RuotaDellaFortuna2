@@ -54,6 +54,7 @@ public class Profilo {
 
     private void initialize()
     {
+        JButton MODIFICAButton = new JButton();
         MODIFICAButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 AGGIORNAButton.setVisible(true);
@@ -69,12 +70,14 @@ public class Profilo {
 
 
 
+        JButton REIMPOSTAPASSWORDButton = new JButton();
         REIMPOSTAPASSWORDButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 ChangePassword rp = new ChangePassword(prox);
             }
         });
 
+        JButton AGGIORNAButton = new JButton();
         AGGIORNAButton.addActionListener(new ActionListener() {
                                              /*-------------------*/
                                              public void actionPerformed(ActionEvent e) {
@@ -85,6 +88,7 @@ public class Profilo {
                                                  prox.ProfChange(email, name, surname, nickname);
                                              }
                                          });
+        JButton INDIETROButton = new JButton();
             INDIETROButton.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
                 }
