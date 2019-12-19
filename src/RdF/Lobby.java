@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Lobby implements Runnable, Serializable
 {
 	private ArrayList<String> player=new ArrayList<String>();
-	private ArrayList<String> observer;
+	private ArrayList<String> observer=new ArrayList<>();
 	private int port;
 	LocalDateTime date;
 	public Lobby(int portnumber) 
