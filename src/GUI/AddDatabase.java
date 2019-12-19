@@ -20,7 +20,9 @@ public class AddDatabase {
         server = serverRdF;
 
 
-    CONFERMAButton.addActionListener(e -> {
+
+        CONFERMAButton.addActionListener(e -> {
+
         String user = dbuser.getText();
         String pswd = passwordField1.getText();
         String url = urldatabase.getText();
@@ -42,12 +44,9 @@ public class AddDatabase {
         if (!ok) {
             JOptionPane.showMessageDialog(null, msg, "Attenzione", JOptionPane.ERROR_MESSAGE);
         } else {
-            //frmServer.setVisible(false);
-            //InsertServer is = new InsertServer(server);
 
             dbconn = new DatabaseConnector(user, url, pswd);
             server.setDbcon(dbconn);
-            //System.out.println(new DatabaseConnector(user, url, pswd));
             int temp=server.Adminex();
             if (temp==0) {
                 SignUpserAdmin sign = new SignUpserAdmin(server);

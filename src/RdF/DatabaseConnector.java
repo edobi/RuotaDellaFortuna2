@@ -13,12 +13,12 @@ import java.util.ArrayList;
 public class DatabaseConnector {
     String url = "jdbc:postgresql://";
     String user = "postgres";
-    String password = "1234567890";
+    String password = "1234";
     Connection conn;
     //String url, user, password;
 
     public static void main(String[] args) {
-        new DatabaseConnector("localhost", "odococo", "Lampert1").connect();
+        new DatabaseConnector("localhost:5432/postgres", "postgres", "1234").connect();
     }
 // TODO: cambiare credenziali
     //**********************************************
@@ -41,8 +41,7 @@ public class DatabaseConnector {
         /*url = url + us;
         user = ur;
         password = ps;*/
-        url = url + ur + "/" + "projectB";
-        //url = url + ur + "/" + "dbRdF";
+        url = url + ur;
         user = us;
         password = ps;
         //System.out.println(url + user + password);

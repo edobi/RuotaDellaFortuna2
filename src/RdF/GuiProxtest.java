@@ -172,12 +172,5 @@ public class GuiProxtest extends Thread
 		boolean temp=false;
 		return temp;
 	}
-	/*for(int i=0;i<10;i++)
-			for(int j=0;j<6;j++)
-			tab.setValueAt("GAY", j, i);
-		for(int i=0;i<10;i++)
-			for(int j=0;j<6;j++)
-			tab.setValueAt(null, i, j);
-			*/
 
 }
